@@ -32,8 +32,6 @@ final class ProfileViewController: UIViewController {
         button.setTitle("Post Button 1", for: .normal)
         button.backgroundColor = .brown
         button.addTarget(self, action: #selector(showPostModal), for: .touchUpInside)
-        
-
         return button
     }()
     
@@ -52,7 +50,6 @@ final class ProfileViewController: UIViewController {
     @objc private func showPostModal() {
         //self.navigationController?.pushViewController(PostViewController(), animated: true)
         present(PostViewController(), animated: true, completion: nil)
-        
     }
     
     override func viewDidLoad() {
